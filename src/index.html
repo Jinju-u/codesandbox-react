@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>TODO(JS)</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="app"></div>
+    <div class="input-area">
+      <input type=text placeholder="TODO 입력">
+      <button>추가</button>
+    </div>
+
+    <div class="imcomplete-area">
+      <p class="title">미완료</p>
+      <ul>
+        <li>
+          <div class="list-row">
+            <p>예시</p>
+            <button>완료</button>
+            <button>삭제</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="complete-area">
+      <p class="title">완료</p>
+      <ul>
+        <li>
+          <div class="list-row">
+            <p>예시</p>
+            <button>되돌리기</button>
+         </div>
+        </li>
+      </ul>
+    </div>
 
     <script src="./index.mjs" type="module"></script>
   </body>
